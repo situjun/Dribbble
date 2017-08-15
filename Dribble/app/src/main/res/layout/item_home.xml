@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.my.jerrychan.widgets.CircleImageView
+        android:layout_margin="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:border_width="2dp"
+        app:border_color="@color/colorPrimaryLight"
+        android:id="@+id/iv_comment_person_img"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/iv_comment_person_img"
+        android:id="@+id/tv_comment_person_name"
+        android:layout_marginBottom="10dp"
+        android:text="JerryChan"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/font_color_black"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:text="JerryChan's comment"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/font_color_black"
+        android:layout_toRightOf="@id/iv_comment_person_img"
+        android:layout_below="@+id/tv_comment_person_name"
+        android:id="@+id/tv_comment_person_comment"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:text="2016.01.01"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/font_color_black"
+        android:layout_toRightOf="@id/iv_comment_person_img"
+        android:layout_below="@+id/tv_comment_person_comment"
+        android:id="@+id/tv_comment_person_update"
+
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv_comment_person_update"
+        android:layout_height="1dp"
+        android:background="@color/line_gray"
+        ></View>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+
+        android:layout_height="wrap_content">
+        <com.my.jerrychan.widgets.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:border_width="2dp"
+            app:border_color="#ffffff"
+            android:id="@+id/author_img"/>
+        <TextView
+            android:layout_toRightOf="@+id/author_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="by Dmmit sdrewa"
+            android:id="@+id/tv_authorname"
+            android:textColor="@color/font_color_white"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:textSize="16sp"
+            android:id="@+id/tv_author_date"
+            android:text="2016-95-01"
+            android:textColor="@color/font_color_white"
+            android:layout_toRightOf="@+id/author_img"
+            android:layout_below="@+id/tv_authorname"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    </View>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/font_color_white"
+        android:textSize="14sp"
+        android:id="@+id/tv_author_description"
+        android:text="hell guys,my name is jerrychan"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

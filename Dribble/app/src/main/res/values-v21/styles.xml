@@ -1,0 +1,22 @@
+<resources>
+
+
+    <!--<style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--<item name="windowActionBar">false</item>-->
+    <!--<item name="windowNoTitle">true</item>-->
+    <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+    <!--</style>-->
+
+    <style name="ImageTranslucentTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--//过渡动画-->
+        <item name="android:windowEnterTransition">@transition/activity_explode</item>
+    </style>
+    <style name="AuthorShotsActTheme" parent="AppTheme.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+
+    </style>
+</resources>
